@@ -81,18 +81,15 @@ const copyQuote = () => {
 function getFormattedQuote() {
   const quote = document.getElementById("quote").innerText;
   const author = document.querySelector(".author").innerText;
-
   const formattedQuote = `“${quote}”\n\n— ${author}`;
   return formattedQuote;
 }
 
 const shareOnTwitter = () => {
-  twitter.addEventListener("click", () => {
-    const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
-      getFormattedQuote()
-    )}`;
-    window.open(tweetUrl, "_blank");
-  });
+  const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
+    getFormattedQuote()
+  )}`;
+  window.open(tweetUrl, "_blank");
 };
 
 function outFunc() {

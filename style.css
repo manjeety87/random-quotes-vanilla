@@ -17,7 +17,6 @@ body {
 .quote {
   font-size: 20px;
   font-weight: 600;
-  /* min-height: 100px; */
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -34,23 +33,27 @@ h2 {
 }
 
 .card {
-  width: 600px;
-  /* background-image: url("https://random-image-pepebigotes.vercel.app/api/random-image"); */
-  margin: 20px 20px;
+  width: 500px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 15px;
   text-shadow: 4px 4px 4px #000000, 5px 5px 5px #ccc;
-  /* text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc; */
-  /* background-blend-mode: lighten;
-  background-color: rgba(255,255,255,0.6); */
   background-color: #7a73d1;
   padding: 30px 30px 25px;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.container{}
+.card:hover {
+  transform: scale(1.02);
+}
+
+.container {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #7a73d1;
+}
 
 .quoteContainer {
   display: flex;
@@ -81,6 +84,8 @@ h2 {
 
 .actionContainer ul li:hover {
   transform: scale(1.2);
+  color: #7a73d1;
+  background-color: #7a73d1;
   transition: all 0.3s ease;
 }
 .actionContainer ul li {
@@ -111,7 +116,6 @@ ul li:is(:hover, .active) {
 .actionContainer {
   display: flex;
   justify-content: space-between;
-  margin: 20px 30px;
 }
 
 .author {
@@ -190,4 +194,26 @@ button:hover {
 .tooltip:hover .toolTipText {
   visibility: visible;
   opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    /* background-color: #fff; */
+  }
+
+  .container {
+    width: 100%;
+    margin: 16px;
+  }
+  .card {
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    text-shadow: 4px 4px 4px #000000, 5px 5px 5px #ccc;
+    background-color: #7a73d1;
+    padding: 30px 30px 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  }
 }
