@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #101204;
+}
+
+.quote {
+  font-size: 20px;
+  font-weight: 600;
+  /* min-height: 100px; */
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 600px;
+  /* background-image: url("https://random-image-pepebigotes.vercel.app/api/random-image"); */
+  margin: 20px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  text-shadow: 4px 4px 4px #000000, 5px 5px 5px #ccc;
+  /* text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc; */
+  /* background-blend-mode: lighten;
+  background-color: rgba(255,255,255,0.6); */
+  background-color: #7a73d1;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.container{}
+
+.quoteContainer {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  height: fit-content;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.quoteContainer i:first-child {
+  margin: 3px 10px 0 0;
+}
+
+.quoteContainer i:last-child {
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+
+.quoteContainer .quote {
+  font-size: 22px;
+  text-align: center;
+}
+
+.actionContainer ul {
+  display: flex;
+}
+
+.actionContainer ul li:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.actionContainer ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 14px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  display: flex;
+  cursor: pointer;
+  color: #7a73d1;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.actionContainer ul li:first-child {
+  margin-left: 0;
+}
+
+ul li:is(:hover, .active) {
+  color: #7a73d1;
+}
+
+.actionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+.author {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.borderLine {
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+button {
+  width: 120px;
+  color: #7a73d1;
+  border-radius: 10px;
+  border: 2px solid #7a73d1;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.loading {
+  display: none;
+  color: #7a73d1;
+  animation: spin 1s alternate infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .toolTipText {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .toolTipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .toolTipText {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Random Quote Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h2>Quote of the Day</h2>
+          <div class="quoteContainer">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote" id="quote"></p>
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <div class="author"></div>
+        </div>
+      </div>
+      <!-- <div class="borderLine"></div> -->
+      <div class="actionContainer">
+        <ul>
+          <div class="tooltip">
+            <li onclick="copyQuote()" onmouseout="outFunc()" class="copy">
+              <span class="toolTipText" id="myTooltip"></span>
+              <i class="fas fa-copy"></i>
+            </li>
+          </div>
+          <li class="twitter" onclick="shareOnTwitter()">
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li class="download" onclick="saveCardAsImage()">
+            <i class="fas fa-download"></i>
+          </li>
+        </ul>
+        <button class="newQuote" onclick="getRandomQuote(true)">
+          New Quote<i class="loading fas fa-spinner"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
