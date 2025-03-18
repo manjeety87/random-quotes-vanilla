@@ -1,4 +1,4 @@
-Random Quote Generator
+Random Quote Generator version 1
 
 Overview
 
@@ -44,7 +44,7 @@ To run it with a local server (e.g., using Python), use:
   python -m http.server
 ```
 
-Then, open `http://localhost:8000` in your browser.
+Then, open `http://localhost:5500` in your browser.
 
 How It Works
 
@@ -55,19 +55,11 @@ How It Works
 
 Screenshots
 
-![Screenshot](screenshot.png)  
-_(Example of the application in action)_
-
-Future Enhancements
-
-- Add more APIs for diverse quotes.
-- Improve UI design and animations.
-- Allow users to select categories for quotes.
+![Winston Churchill Quote](<Winston Churchill-quote.png>)
+![shareOnTwitter](shareOnTwitter.png)
 
 Contributing
-
 Feel free to fork this repository and submit pull requests!
 
 License
-
 This project is open-source and available under the MIT License.
