@@ -4,6 +4,8 @@ Overview
 
 This is a simple Random Quote Generator that fetches and displays inspirational quotes along with a random background image. Users can copy quotes to the clipboard, share them on Twitter, and even download the quote as an image.
 
+Check it out live at [Random Quote Generator](https://random-quotes-vanilla.vercel.app/).
+
 Features
 
 - Fetches a random quote from an API.
@@ -55,11 +57,16 @@ How It Works
 
 Screenshots
 
+Downloaded Quote as Image
 ![Winston Churchill Quote](<Winston Churchill-quote.png>)
+
+Sharing on twitter -
 ![shareOnTwitter](shareOnTwitter.png)
 
 Contributing
+
 Feel free to fork this repository and submit pull requests!
 
 License
+
 This project is open-source and available under the MIT License.
